@@ -1,3 +1,5 @@
+![GitHub](https://img.shields.io/github/license/brightbock/baseline-dns-records-tf) ![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/brightbock/baseline-dns-records-tf) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/brightbock/baseline-dns-records-tf/Terraform)
+
 # Baseline DNS records
 
 This is a Terrafrom module to set baseline DNS records in a Route53 zone.
