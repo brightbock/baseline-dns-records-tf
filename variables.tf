@@ -39,3 +39,8 @@ variable "dmarc_txt" {
   default     = ["v=DMARC1; p=reject; sp=reject;"]
 }
 
+variable "aws_region" {
+  type    = string
+  default = "us-east-1"
+}
+
