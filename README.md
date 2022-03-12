@@ -19,14 +19,16 @@ The default `CAA` value prohibits all certificate issuance.
 ## How to use:
 
 1. Add a module definition to your Terraform. See the example below.
-2. Update `route53_zone_name = ...` to match your zone name(s).
-3. Optional: Uncomment and update the other example values to match your requirements.
+2. Update `route53_zone_name = ...` to match your zone name.
+3. Update `route53_zone_id = ...` to match your zone ID.
+4. Optional: Uncomment and update the other example values to match your requirements.
 
 ```
 module "baseline-dns-records" {
-  source = "git::https://github.com/brightbock/baseline-dns-records-tf.git?ref=v0.2.0"
+  source = "git::https://github.com/brightbock/baseline-dns-records-tf.git?ref=v0.4.0"
   
-  route53_zone_name = [ "example.com", "example.net" ]
+  route53_zone_name = "example.com"
+  route53_zone_id = "ABCDEXAMPLE1234"
 
   #caa_list = [
   #  "0 issue \"amazon.com\"",

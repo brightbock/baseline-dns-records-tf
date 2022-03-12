@@ -1,6 +1,11 @@
 variable "route53_zone_name" {
-  type        = set(string)
-  description = "The zone, as defined in AWS Route53"
+  type        = string
+  description = "The zone name, as defined in AWS Route53"
+}
+
+variable "route53_zone_id" {
+  type        = string
+  description = "The zone id, as defined in AWS Route53"
 }
 
 variable "record_ttl" {
